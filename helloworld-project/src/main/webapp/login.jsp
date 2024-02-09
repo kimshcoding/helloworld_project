@@ -1,0 +1,185 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title> Hello World </title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <style>
+        tr:nth-child(even) {
+            background-color: #2e2649;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #483b78;
+        }
+
+        th {
+            background-color: #342F44;
+            color: white;
+        }
+
+        .noBorder {
+            border: none !important;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="sub_page">
+
+    <div class="hero_area">
+
+        <div class="hero_bg_box">
+            <div class="bg_img_box">
+                <img src="images/hero-bg.png" alt="">
+            </div>
+        </div>
+
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.jsp">
+                        <span>
+                            Hello World
+                        </span>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=""> </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  ">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.jsp">Home </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="qboard.jsp">Q & A <span class="sr-only">(current)</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="kboard.jsp">지 식</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cboard.jsp">커뮤니티</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nboard.jsp">공지사항</a>
+                            </li>
+                          <!--   <li class="nav-item">
+                                <a class="nav-link" href="view.jsp">마이 페이지</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="list.jsp">회원 정보</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.jsp"> <i class="fa fa-user" aria-hidden="true"></i>
+                                    로그인</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="join.jsp"> <i class="fa fa-user" aria-hidden="true"></i>
+                                    회원가입</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+    </div>
+
+    <!-- login section -->
+
+    <section class="about_section layout_padding">
+        <div class="container  ">
+            <div class="heading_container heading_center">
+                <h2>
+                    Hello World에 오신 것을 <span>환영합니다.</span>
+                </h2>
+                <p>
+                    Hello World는 개발자를 위한 지식 공유 플랫폼입니다.
+                </p><br><br><br><br><br>
+
+                <!-- 로그인 시작-->
+                <form action="loginOk.jsp" method="post" class="col-md-4 offset-md-0">
+                    <div class="form-group">
+                        <label for="signupId">아이디</label>
+                        <input type="text" id="mid" name="mid" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">비밀번호</label>
+                        <input type="password" id="mpassword" name="mpassword" class="form-control" required>
+                        <br>
+                        <button type="submit" class="btn btn-primary">로그인</button>
+                </form>
+                <!-- 로그인 종료-->
+            </div>
+    </section>
+
+
+
+
+
+
+    <!-- end login section -->
+
+
+
+    <!-- footer section -->
+    <%@ include file="footer.jsp" %>
+    <!-- footer section -->
+
+    <!-- jQery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <!-- custom js -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
+    <!-- End Google Map -->
+
+</body>
+
+</html>
